@@ -10,7 +10,7 @@ public class Snake : MonoBehaviour
     public Vector2 direction = Vector2.right;
     private Vector2 input;
     public int initialSize = 4;
-    int numFishes = 0;
+    public int numFishes = 0;
     [SerializeField] Text fishes;
 
     // Start is called before the first frame update
