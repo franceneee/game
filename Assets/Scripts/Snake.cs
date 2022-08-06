@@ -12,6 +12,7 @@ public class Snake : MonoBehaviour
     public int initialSize = 4;
     public int numFishes = 0;
     [SerializeField] Text fishes;
+    public AudioClip chewSound;
 
     // Start is called before the first frame update
     void Start()
@@ -108,6 +109,9 @@ public class Snake : MonoBehaviour
             Grow();
             numFishes++;
             fishes.text = "Fishes: " + numFishes;
+            GameObject soundGameObject = new GameObject("Sound");
+            AudioSource audioSource = soundGameObject.AddComponent<AudioSource>();
+            audioSource.PlayOneShot(chewSound);
         }
         else if (other.gameObject.CompareTag("Obstacle"))
         {
