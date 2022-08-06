@@ -10,6 +10,6 @@ public class SceneChanger : MonoBehaviour
 
     public void BackToHome()
     {
-        SceneManager.LoadScene("Home");
+        SceneManager.LoadScene("Main");
     }
 }
