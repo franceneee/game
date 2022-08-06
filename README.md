@@ -16,3 +16,4 @@ Not in use:
 
 ## Audio/Sounds
 - [Chewing sound](https://soundscrate.com/royalty-free-music/soundscrate-chew-1)
+- [Light step](https://soundscrate.com/sound-effects/soundscrate-light-step)
