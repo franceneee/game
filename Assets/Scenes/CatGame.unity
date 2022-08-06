@@ -583,6 +583,7 @@ MonoBehaviour:
   initialSize: 4
   numFishes: 0
   fishes: {fileID: 849462660}
+  chewSound: {fileID: 8300000, guid: 6713fac5824d4f34eb21cc1f9e7967ee, type: 3}
 --- !u!1 &618241643
 GameObject:
   m_ObjectHideFlags: 0
