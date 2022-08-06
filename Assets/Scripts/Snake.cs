@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class Snake : MonoBehaviour
@@ -9,11 +10,14 @@ public class Snake : MonoBehaviour
     public Vector2 direction = Vector2.right;
     private Vector2 input;
     public int initialSize = 4;
+    public int numFishes = 0;
+    [SerializeField] Text fishes;
 
     // Start is called before the first frame update
     void Start()
     {
         ResetState();
+        fishes.text = "Fishes: 0";
     }
 
     // Update is called once per frame    private void Update()
@@ -102,6 +106,8 @@ public class Snake : MonoBehaviour
         if (other.gameObject.CompareTag("Food"))
         {
             Grow();
+            numFishes++;
+            fishes.text = "Fishes: " + numFishes;
         }
         else if (other.gameObject.CompareTag("Obstacle"))
         {
